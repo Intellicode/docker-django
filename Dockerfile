@@ -11,11 +11,3 @@ RUN apk --update add \
         adduser -S -g www-data www-data
 
 EXPOSE 8000
-
-COPY . /www/app
-WORKDIR /www/app
-
-RUN pip3 install -r requirements.txt
-RUN chown -R www-data:www-data /www/app
-
-CMD uwsgi --ini uswgi.ini
