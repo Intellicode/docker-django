@@ -1,2 +1,2 @@
-# docker-django
-Docker image for Django projects
+# docker-uwsgi
+Docker image for uwsgi projects
